@@ -71,3 +71,10 @@ body{
 .itens{
     list-style: none;
 }
+
+.erro{
+    color: red;
+    background: rgba(207, 44, 44, 0.377);
+    padding: 5px;
+    margin: 5px;
+}
