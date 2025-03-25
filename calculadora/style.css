@@ -1,0 +1,92 @@
+.centralizar {
+    margin: auto;
+    width: 20%;
+}
+
+header {
+    text-align: center;
+}
+
+#calculadora {
+    background-color: rgb(114, 112, 108);
+    padding: 50px 0px 50px 0px;
+}
+
+#displayResultado {
+    display: flex;
+    justify-content: center;
+    width: 72.5%;
+}
+
+#areaResultado {
+    height: 50px;
+    width: 70%;
+    resize: none;
+    user-select: none;
+    color: black;
+    background-color: rgb(231, 227, 227);
+}
+
+#botoes {
+    display: flex;
+    justify-content: center;
+}
+
+#operacoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around ;
+    padding: 20px 20px 20px 0px;
+    gap: 27px;
+
+}
+
+#divisao {
+    margin-top: 20px;
+}
+
+#operacoes button {
+    padding: 10px;
+    height: 35px;
+    width: 35px;
+}
+
+#resultado {
+    grid-area: resultado;
+    justify-self: stretch;
+    
+}
+
+#limpar {
+    grid-area: c;
+    justify-self: stretch;
+}
+
+.botao {
+    padding: 10px;
+}
+
+#num1 {grid-area: num1;}
+#num2 {grid-area: num2;}
+#num3 {grid-area: num3;}
+#num4 {grid-area: num4;}
+#num5 {grid-area: num5;}
+#num6 {grid-area: num6;}
+#num7 {grid-area: num7;}
+#num8 {grid-area: num8;}
+#num9 {grid-area: num9;}
+#num0 {grid-area: num0;}
+
+#numeros {
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 40px 40px 40px 40px 40px;
+    grid-template-areas:
+    "num1 num2 num3"
+    "num4 num5 num6"
+    "num7 num8 num9"
+    "num0 c c"
+    "resultado resultado resultado";
+    gap: 3%;
+    padding: 40px;
+}

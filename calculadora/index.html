@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Calculado simples</title>
+    </head>
+    <script src="./main.js"></script>
+    <body onload="teste()">
+        <header class="centralizar">
+            <h1>Calculadora</h1>
+        </header>
+        <main>
+            <div id="calculadora" class="centralizar">
+                <div id="displayResultado" class="centralizar">
+                    <textarea name="resultado" id="areaResultado" disabled></textarea>
+                </div>
+                <div id="botoes">
+                    <div id="numeros">
+                        <button class="botao" id="num9" onclick="botaoNumero(9)">9</button>
+                        <button class="botao" id="num8" onclick="botaoNumero(8)">8</button>
+                        <button class="botao" id="num7" onclick="botaoNumero(7)">7</button>
+                        <button class="botao" id="num4" onclick="botaoNumero(4)">4</button>
+                        <button class="botao" id="num5" onclick="botaoNumero(5)">5</button>
+                        <button class="botao" id="num6" onclick="botaoNumero(6)">6</button>
+                        <button class="botao" id="num1" onclick="botaoNumero(1)">1</button>
+                        <button class="botao" id="num2" onclick="botaoNumero(2)">2</button>
+                        <button class="botao" id="num3" onclick="botaoNumero(3)">3</button>
+                        <button class="botao" id="num0" onclick="botaoNumero(0)">0</button>
+                        <button class="botao" id="limpar" onclick="limpar()">C</button>
+                        <button class="botao" id="resultado" onclick="resultado()">=</button>
+                    </div>
+                    <div id="operacoes">
+                        <button onclick="botaoOperacao('/')" id="divisao">&#247;</button>
+                        <button onclick="botaoOperacao('x')">x</button>
+                        <button onclick="botaoOperacao('-')">-</button>
+                        <button onclick="botaoOperacao('+')" id="adicao">+</button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
